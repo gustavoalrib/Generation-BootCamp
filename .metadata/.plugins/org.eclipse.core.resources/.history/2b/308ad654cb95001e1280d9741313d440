@@ -1,0 +1,30 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+		
+	int numero1, numero2, contador;
+	
+	Scanner leia = new Scanner(System.in);
+	
+	System.out.println("Digite um número inteiro: ");
+	numero1 = leia.nextInt();
+	
+	System.out.println("Digite outro número inteiro: ");
+	numero2 = leia.nextInt();
+	
+		if (numero1 < numero2) {
+			for (contador = numero1; contador <= numero2; contador++) {
+			System.out.println("Teste");
+			}
+		} else {
+			System.out.println("Intervalo inválido");
+		}
+	
+
+	}
+
+}

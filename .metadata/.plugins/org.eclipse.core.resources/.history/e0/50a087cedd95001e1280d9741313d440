@@ -1,0 +1,21 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio3 {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner(System.in);
+		
+		int idade = 0;
+		
+		while (idade < 21) {
+			System.out.println("Menores de 21 anos: ");
+			idade = leia.nextInt();
+		}
+		
+		System.out.println("Teste");
+		
+	}
+}

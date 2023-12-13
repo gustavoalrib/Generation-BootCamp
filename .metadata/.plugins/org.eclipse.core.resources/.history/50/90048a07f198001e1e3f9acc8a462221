@@ -1,0 +1,24 @@
+package exercicios;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ExercicioCollectionList1 {
+
+	public static void main(String[] args) {
+		
+		List<String> cores = new ArrayList<String>();
+		
+		Scanner leia = new Scanner(System.in);
+		
+		cores.add("vermelho");
+		cores.add("preto");
+		cores.add("branco");
+
+		for(String minhasCores: cores) {
+			System.out.println(minhasCores);
+		}
+	}
+
+}

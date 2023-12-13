@@ -1,0 +1,30 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ExercicioMatrizes1 {
+
+	public static void main(String[] args) {
+		
+		int numeros[][] = new int[3][3];
+		int somaDiagonalP = 0, somaDiagonalS = 0;
+		int linha, coluna;
+		
+		Scanner leia = new Scanner(System.in);
+		
+		for (linha = 0; linha < 3; linha ++) {
+			for (coluna = 0; coluna < 3; coluna ++) {
+				System.out.println("Digite um número inteiro: ");
+				numeros[linha][coluna] = leia.nextInt();
+				
+				somaDiagonalP += numeros[0][0] + numeros[1][1] + numeros[2][2];		
+				somaDiagonalS += numeros[0][2] + numeros[1][1] + numeros[2][0];
+			}
+		}
+		System.out.println("Elementos da Diagonal Principal: " + numeros[0][0] + ", " + numeros[1][1] + ", " + numeros[2][2]);
+		System.out.println("Elementos da Diagonal Secundária: " + numeros[0][2] + ", " + numeros[1][1] + ", " + numeros[2][0]);
+		System.out.println("Soma dos Elementos da Diagonal Principal: " + somaDiagonalP);
+		System.out.println("Soma dos Elementos da Diagonal Secundária: " + somaDiagonalS);
+	}
+
+}

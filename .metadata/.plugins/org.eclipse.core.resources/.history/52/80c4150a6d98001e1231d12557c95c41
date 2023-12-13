@@ -1,0 +1,39 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ExercicioVetores2 {
+
+	public static void main(String[] args) {
+		
+		int numeros[] = new int[10];
+		int soma = 0;
+		
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("Digite 10 números inteiros: ");
+		
+		for (int i = 0; i < 10; i++) {
+			numeros[i] = leia.nextInt();
+			
+			soma += numeros[i];
+		}
+		
+		System.out.println("Elementos nos índices ímpares: ");
+		
+		for (int j = 1; j < numeros.length; j += 2) {
+			System.out.println(numeros[j]);
+		}
+		
+		System.out.println("Elementos pares: ");
+		
+		for (int k = 0; k < numeros.length; k++) {
+			if (numeros[k] % 2 == 0) {
+				System.out.println(numeros[k]);
+			}
+		}
+		
+		System.out.println("Soma: " + soma);
+		
+	}
+}

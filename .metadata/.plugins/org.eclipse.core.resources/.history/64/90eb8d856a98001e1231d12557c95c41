@@ -1,0 +1,21 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ExercicioVetores2 {
+
+	public static void main(String[] args) {
+		
+		int i;
+		int numerosDigitados[] = new int[10];
+		
+		Scanner leia = new Scanner(System.in);
+		
+		for (i = 0; i < 10; i++) {
+			System.out.println("Digite um número inteiro: ");
+			numerosDigitados[i] = leia.nextInt();
+			System.out.println(numerosDigitados);
+		}
+	}
+
+}

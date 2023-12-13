@@ -1,0 +1,37 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio4 {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner(System.in);
+		
+		int idade = 0, genero, dev;
+		
+		while (idade > 0) {
+			System.out.println("Digite sua idade:");
+			idade = leia.nextInt();
+			
+			System.out.println("Digite sua identidade de gênero:");
+			System.out.println("1- Mulher cis");
+			System.out.println("2- Homem cis");
+			System.out.println("3- Não Binário");
+			System.out.println("4- Mulher Trans");
+			System.out.println("5- Homem Trans");
+			System.out.println("6- Outros");
+			genero = leia.nextInt();
+			
+			System.out.println("Digite qual tipo de pessoa desenvolvedora você é:");
+			System.out.println("1- Backend");
+			System.out.println("2- Frontend");
+			System.out.println("3- Mobile");
+			System.out.println("4- Fullstack");
+			dev = leia.nextInt();
+			
+			System.out.println("Deseja continuar a leitura dos dados do novo colaborador? Pressione (S/N)");
+		}
+	}
+
+}

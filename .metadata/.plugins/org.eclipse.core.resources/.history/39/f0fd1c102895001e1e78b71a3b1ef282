@@ -1,0 +1,40 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class exercicio5 {
+
+	public static void main(String[] args) {
+	
+	int produto, quantidade;
+	float valorTotal;
+	
+	Scanner leia = new Scanner(System.in);
+	
+	System.out.println("Produtos:");
+	System.out.println("n1 - Cachorro quente");
+	System.out.println("n2 - X-Salada");
+	System.out.println("n3 - X-Bacon");
+	System.out.println("n4 - Bauru");
+	System.out.println("n5 - Refrigerante");
+	System.out.println("n6 - Suco de laranja");
+	produto = leia.nextInt();
+	
+	System.out.println("Informe a quantidade desejada: ");
+	quantidade = leia.nextInt();
+	
+	switch (produto) {
+	
+	case 1:
+		valorTotal = 10 * quantidade;
+		System.out.println("Produto: " + produto + "\nValor total: R$ " + valorTotal);
+		break;
+		
+		
+	}
+		
+	
+	leia.close();
+	}
+
+}

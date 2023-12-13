@@ -1,0 +1,57 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio2 {
+
+	public static void main(String[] args) {
+		
+		int n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, contador;
+		int[] numerosPares = new int[10];
+		int[] numerosImpares = new int[10];
+		
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.println("Digite o primeiro número inteiro: ");
+		n1 = leia.nextInt();
+		
+		System.out.println("Digite o segundo número inteiro: ");
+		n2 = leia.nextInt();
+		
+		System.out.println("Digite o terceiro número inteiro: ");
+		n3 = leia.nextInt();
+		
+		System.out.println("Digite o quarto número inteiro: ");
+		n4 = leia.nextInt();
+		
+		System.out.println("Digite o quinto número inteiro: ");
+		n5 = leia.nextInt();
+		
+		System.out.println("Digite o sexto número inteiro: ");
+		n6 = leia.nextInt();
+		
+		System.out.println("Digite o sétimo número inteiro: ");
+		n7 = leia.nextInt();
+		
+		System.out.println("Digite o oitavo número inteiro: ");
+		n8 = leia.nextInt();
+		
+		System.out.println("Digite o nono número inteiro: ");
+		n9 = leia.nextInt();
+		
+		System.out.println("Digite o décimo número inteiro: ");
+		n10 = leia.nextInt();
+		
+		for (contador = n1; contador <= n10; contador++) {
+			if (contador % 2 == 0) {
+				numerosPares[contador] = leia.nextInt();
+				System.out.println("Número pares: " + numerosPares.length);
+			} else {
+				numerosImpares[contador] = leia.nextInt();
+				System.out.println("\nNúmeros ímpares: " + numerosImpares.length);
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package exercicios;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ExercicioCollectionList1 {
+
+	public static void main(String[] args) {
+		
+		String cor;
+		
+		List<String> cores = new ArrayList<String>();
+		
+		Scanner leia = new Scanner(System.in);
+
+		for (int i = 0; i < 5; i++) {
+			cor = leia.nextLine();
+		}
+	}
+
+}

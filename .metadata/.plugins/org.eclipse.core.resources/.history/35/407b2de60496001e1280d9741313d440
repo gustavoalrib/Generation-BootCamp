@@ -1,0 +1,69 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio4 {
+
+	public static void main(String[] args) {
+		
+		String continuar = "s";
+		int idade = 0, genero, dev, backend = 0, mulheresFront = 0, homensMobMaior40 = 0, nbMenor30 = 0, total = 0, media = 0, somaIdades = 0;
+		
+		Scanner leia = new Scanner(System.in);
+		
+		while (continuar.equals("s")) {
+			System.out.println("Digite sua idade:");
+			idade = leia.nextInt();
+			
+			System.out.println("Digite sua identidade de gênero:");
+			System.out.println("1- Mulher cis");
+			System.out.println("2- Homem cis");
+			System.out.println("3- Não Binário");
+			System.out.println("4- Mulher Trans");
+			System.out.println("5- Homem Trans");
+			System.out.println("6- Outros");
+			genero = leia.nextInt();
+			
+			System.out.println("Digite qual tipo de pessoa desenvolvedora você é:");
+			System.out.println("1- Backend");
+			System.out.println("2- Frontend");
+			System.out.println("3- Mobile");
+			System.out.println("4- Fullstack");
+			dev = leia.nextInt();
+			
+			if (dev == 1) {
+				backend++;
+			}
+			
+			if (genero == 1 || genero == 4 && dev == 2) {
+				mulheresFront++;
+			}
+			
+			if (genero == 2 || genero == 5 && dev == 3 && idade > 40) {
+				homensMobMaior40++;
+			}
+			
+			if (genero == 3 && dev == 4 && idade < 30) {
+				nbMenor30++;
+			}
+			
+			total++;
+			
+			somaIdades += idade;
+			
+			System.out.println("Deseja continuar (s/n)?");
+			continuar = leia.next();
+			
+		}
+		
+		media = somaIdades / total;
+		
+		System.out.println("Total de pessoas desenvolvedoras Backend: " + backend);
+		System.out.println("Total de Mulheres Cis e Trans desenvolvedoras Frontend: " + mulheresFront);
+		System.out.println("Total de Homens Cis e Trans desenvolvedores Mobile maiores de 40 anos: " + homensMobMaior40);
+		System.out.println("Total de Pessoas Não Binárias desenvolvedoras FullStack menores de 30 anos: " + nbMenor30);
+		System.out.println("O número total de pessoas que responderam à pesquisa: " + total);
+		System.out.println("A média de idade das pessoas que responderam à pesquisa: " + media);
+	}
+
+}

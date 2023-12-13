@@ -1,0 +1,23 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ExercicioVetores1 {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner(System.in);
+		
+		int array[] = {2,5,1,3,4,9,7,8,10,6};
+		int i, numero;
+		
+		System.out.println("Digite o número que você deseja encontrar:");
+		numero = leia.nextInt();
+		
+		for (i = 0; i < array.length; i++) {
+			System.out.println(array[i]);
+		}
+		
+	}
+
+}

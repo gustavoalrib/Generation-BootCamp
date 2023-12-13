@@ -1,0 +1,24 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio3 {
+
+	public static void main(String[] args) {
+		
+		Scanner leia = new Scanner(System.in);
+		
+		int idade;
+
+		
+		while (idade < 21 && idade > 50) {
+			
+			System.out.println("Digite uma idade:");
+			idade = leia.nextInt();
+		idade++;
+		}
+		
+
+	}
+
+}
